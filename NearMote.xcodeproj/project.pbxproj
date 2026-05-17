@@ -6,33 +6,67 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		CEE863C82F1C3A88008A3BC1 /* MacRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		CE71F7722F2FF0BC001AE8A4 /* CommandBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F7682F2FF0BB001AE8A4 /* CommandBuilder.swift */; };
+		CE71F7732F2FF0BC001AE8A4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F76E2F2FF0BB001AE8A4 /* SettingsView.swift */; };
+		CE71F7742F2FF0BC001AE8A4 /* RemoteCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F76C2F2FF0BB001AE8A4 /* RemoteCommand.swift */; };
+		CE71F7752F2FF0BC001AE8A4 /* NearMoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F76B2F2FF0BB001AE8A4 /* NearMoteApp.swift */; };
+		CE71F7762F2FF0BC001AE8A4 /* SSHService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F7702F2FF0BB001AE8A4 /* SSHService.swift */; };
+		CE71F7772F2FF0BC001AE8A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F7692F2FF0BB001AE8A4 /* ContentView.swift */; };
+		CE71F7782F2FF0BC001AE8A4 /* RemoteControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F76D2F2FF0BB001AE8A4 /* RemoteControlViewModel.swift */; };
+		CE71F7792F2FF0BC001AE8A4 /* SSHCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F76F2F2FF0BB001AE8A4 /* SSHCredentials.swift */; };
+		CE71F77A2F2FF0BC001AE8A4 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71F76A2F2FF0BB001AE8A4 /* KeychainManager.swift */; };
+		CE71F77B2F2FF0BC001AE8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE71F7672F2FF0BB001AE8A4 /* Assets.xcassets */; };
+		CEE863F12F1C4F07008A3BC1 /* NIOSSH in Frameworks */ = {isa = PBXBuildFile; productRef = CEE863F02F1C4F07008A3BC1 /* NIOSSH */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CEE863CA2F1C3A88008A3BC1 /* MacRemote */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MacRemote;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		CE71F7672F2FF0BB001AE8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE71F7682F2FF0BB001AE8A4 /* CommandBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandBuilder.swift; sourceTree = "<group>"; };
+		CE71F7692F2FF0BB001AE8A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE71F76A2F2FF0BB001AE8A4 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		CE71F76B2F2FF0BB001AE8A4 /* NearMoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMoteApp.swift; sourceTree = "<group>"; };
+		CE71F76C2F2FF0BB001AE8A4 /* RemoteCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCommand.swift; sourceTree = "<group>"; };
+		CE71F76D2F2FF0BB001AE8A4 /* RemoteControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlViewModel.swift; sourceTree = "<group>"; };
+		CE71F76E2F2FF0BB001AE8A4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CE71F76F2F2FF0BB001AE8A4 /* SSHCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHCredentials.swift; sourceTree = "<group>"; };
+		CE71F7702F2FF0BB001AE8A4 /* SSHService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHService.swift; sourceTree = "<group>"; };
+		CEE863C82F1C3A88008A3BC1 /* NearMote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearMote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEE863C52F1C3A88008A3BC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE863F12F1C4F07008A3BC1 /* NIOSSH in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE71F7712F2FF0BB001AE8A4 /* NearMote */ = {
+			isa = PBXGroup;
+			children = (
+				CE71F7672F2FF0BB001AE8A4 /* Assets.xcassets */,
+				CE71F7682F2FF0BB001AE8A4 /* CommandBuilder.swift */,
+				CE71F7692F2FF0BB001AE8A4 /* ContentView.swift */,
+				CE71F76A2F2FF0BB001AE8A4 /* KeychainManager.swift */,
+				CE71F76B2F2FF0BB001AE8A4 /* NearMoteApp.swift */,
+				CE71F76C2F2FF0BB001AE8A4 /* RemoteCommand.swift */,
+				CE71F76D2F2FF0BB001AE8A4 /* RemoteControlViewModel.swift */,
+				CE71F76E2F2FF0BB001AE8A4 /* SettingsView.swift */,
+				CE71F76F2F2FF0BB001AE8A4 /* SSHCredentials.swift */,
+				CE71F7702F2FF0BB001AE8A4 /* SSHService.swift */,
+			);
+			path = NearMote;
+			sourceTree = "<group>";
+		};
 		CEE863BF2F1C3A88008A3BC1 = {
 			isa = PBXGroup;
 			children = (
-				CEE863CA2F1C3A88008A3BC1 /* MacRemote */,
+				CE71F7712F2FF0BB001AE8A4 /* NearMote */,
 				CEE863C92F1C3A88008A3BC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +74,7 @@
 		CEE863C92F1C3A88008A3BC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEE863C82F1C3A88008A3BC1 /* MacRemote.app */,
+				CEE863C82F1C3A88008A3BC1 /* NearMote.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEE863C72F1C3A88008A3BC1 /* MacRemote */ = {
+		CEE863C72F1C3A88008A3BC1 /* NearMote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEE863D52F1C3A89008A3BC1 /* Build configuration list for PBXNativeTarget "MacRemote" */;
+			buildConfigurationList = CEE863D52F1C3A89008A3BC1 /* Build configuration list for PBXNativeTarget "NearMote" */;
 			buildPhases = (
 				CEE863C42F1C3A88008A3BC1 /* Sources */,
 				CEE863C52F1C3A88008A3BC1 /* Frameworks */,
@@ -60,14 +94,12 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				CEE863CA2F1C3A88008A3BC1 /* MacRemote */,
-			);
-			name = MacRemote;
+			name = NearMote;
 			packageProductDependencies = (
+				CEE863F02F1C4F07008A3BC1 /* NIOSSH */,
 			);
 			productName = MacRemote;
-			productReference = CEE863C82F1C3A88008A3BC1 /* MacRemote.app */;
+			productReference = CEE863C82F1C3A88008A3BC1 /* NearMote.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CEE863C32F1C3A88008A3BC1 /* Build configuration list for PBXProject "MacRemote" */;
+			buildConfigurationList = CEE863C32F1C3A88008A3BC1 /* Build configuration list for PBXProject "NearMote" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,12 +126,15 @@
 			);
 			mainGroup = CEE863BF2F1C3A88008A3BC1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CEE863EF2F1C4F07008A3BC1 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CEE863C92F1C3A88008A3BC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEE863C72F1C3A88008A3BC1 /* MacRemote */,
+				CEE863C72F1C3A88008A3BC1 /* NearMote */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE71F77B2F2FF0BC001AE8A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +155,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE71F7722F2FF0BC001AE8A4 /* CommandBuilder.swift in Sources */,
+				CE71F7732F2FF0BC001AE8A4 /* SettingsView.swift in Sources */,
+				CE71F7742F2FF0BC001AE8A4 /* RemoteCommand.swift in Sources */,
+				CE71F7752F2FF0BC001AE8A4 /* NearMoteApp.swift in Sources */,
+				CE71F7762F2FF0BC001AE8A4 /* SSHService.swift in Sources */,
+				CE71F7772F2FF0BC001AE8A4 /* ContentView.swift in Sources */,
+				CE71F7782F2FF0BC001AE8A4 /* RemoteControlViewModel.swift in Sources */,
+				CE71F7792F2FF0BC001AE8A4 /* SSHCredentials.swift in Sources */,
+				CE71F77A2F2FF0BC001AE8A4 /* KeychainManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +301,8 @@
 				DEVELOPMENT_TEAM = 46FNB762FS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = NearMote;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -266,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "illitrate-Publicashions.MacRemote";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.illitrate.publicashions.NearMote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -288,6 +335,8 @@
 				DEVELOPMENT_TEAM = 46FNB762FS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = NearMote;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,7 +347,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "illitrate-Publicashions.MacRemote";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.illitrate.publicashions.NearMote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -313,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEE863C32F1C3A88008A3BC1 /* Build configuration list for PBXProject "MacRemote" */ = {
+		CEE863C32F1C3A88008A3BC1 /* Build configuration list for PBXProject "NearMote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEE863D32F1C3A89008A3BC1 /* Debug */,
@@ -322,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEE863D52F1C3A89008A3BC1 /* Build configuration list for PBXNativeTarget "MacRemote" */ = {
+		CEE863D52F1C3A89008A3BC1 /* Build configuration list for PBXNativeTarget "NearMote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEE863D62F1C3A89008A3BC1 /* Debug */,
@@ -332,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEE863EF2F1C4F07008A3BC1 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-ssh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEE863F02F1C4F07008A3BC1 /* NIOSSH */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE863EF2F1C4F07008A3BC1 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */;
+			productName = NIOSSH;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEE863C02F1C3A88008A3BC1 /* Project object */;
 }
